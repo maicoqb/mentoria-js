@@ -17,6 +17,11 @@
         input[type="checkbox"] {
             margin-right: 1em;
         }
+        
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: gray;
+        }
     </style>
 </head>
 <body>
@@ -24,15 +29,15 @@
     <span>Itens que preciso comprar:</span>
     
     <ul>
-        <li><input type="checkbox" />Arroz</li>
-        <li><input type="checkbox" />Pão</li>
-        <li><input type="checkbox" />Maçã</li>
-        <li><input type="checkbox" />Detergente</li>
-        <li><input type="checkbox" />Desinfetante</li>
-        <li><input type="checkbox" />Sabonete</li>
-        <li><input type="checkbox" />Creme dental</li>
-        <li><input type="checkbox" />Papel toalha</li>
-        <li><input type="checkbox" />Sacos de lixo</li>
+        <li><input type="checkbox" /><label>Arroz</label></li>
+        <li><input type="checkbox" /><label>Pão</label></li>
+        <li><input type="checkbox" /><label>Maçã</label></li>
+        <li><input type="checkbox" /><label>Detergente</label></li>
+        <li><input type="checkbox" /><label>Desinfetante</label></li>
+        <li><input type="checkbox" /><label>Sabonete</label></li>
+        <li><input type="checkbox" /><label>Creme dental</label></li>
+        <li><input type="checkbox" /><label>Papel toalha</label></li>
+        <li><input type="checkbox" /><label>Sacos de lixo</label></li>
     </ul>
 </body>
 </html>
