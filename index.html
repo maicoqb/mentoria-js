@@ -15,11 +15,11 @@
             margin-top: 0.5em;
         }
 
-        input[type="checkbox"] {
+        .toggle-checkbox {
             margin-right: 1em;
         }
 
-        input[type="checkbox"]:checked+label {
+        .toggle-checkbox:checked+label {
             text-decoration: line-through;
             color: gray;
         }
@@ -28,7 +28,7 @@
             display: none;
         }
 
-        li:has(input[type="checkbox"]:checked)  {
+        li:has(.remove-checkbox:checked)  {
             display: none;
         }
     </style>
@@ -40,57 +40,57 @@
 
     <ul>
         <li>
-            <input type="checkbox" id="item1" />
+            <input type="checkbox" class="toggle-checkbox" class="toggle-checkbox" id="item1" />
             <label for="item1">Arroz</label>
-            <input type="checkbox" id="item1-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item1-remove" />
             <label for="item1-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item2" />
+            <input type="checkbox" class="toggle-checkbox" id="item2" />
             <label for="item2">Pão</label>
-            <input type="checkbox" id="item2-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item2-remove" />
             <label for="item2-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item3" />
+            <input type="checkbox" class="toggle-checkbox" id="item3" />
             <label for="item3">Maçã</label>
-            <input type="checkbox" id="item3-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item3-remove" />
             <label for="item3-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item4" />
+            <input type="checkbox" class="toggle-checkbox" id="item4" />
             <label for="item4">Detergente</label>
-            <input type="checkbox" id="item4-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item4-remove" />
             <label for="item4-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item5" />
+            <input type="checkbox" class="toggle-checkbox" id="item5" />
             <label for="item5">Desinfetante</label>
-            <input type="checkbox" id="item5-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item5-remove" />
             <label for="item5-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item6" />
+            <input type="checkbox" class="toggle-checkbox" id="item6" />
             <label for="item6">Sabonete</label>
-            <input type="checkbox" id="item6-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item6-remove" />
             <label for="item6-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item7" />
+            <input type="checkbox" class="toggle-checkbox" id="item7" />
             <label for="item7">Creme dental</label>
-            <input type="checkbox" id="item7-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item7-remove" />
             <label for="item7-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item8" />
+            <input type="checkbox" class="toggle-checkbox" id="item8" />
             <label for="item8">Papel toalha</label>
-            <input type="checkbox" id="item8-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item8-remove" />
             <label for="item8-remove">❌</label>
         </li>
         <li>
-            <input type="checkbox" id="item9" />
+            <input type="checkbox" class="toggle-checkbox" id="item9" />
             <label for="item9">Sacos de lixo</label>
-            <input type="checkbox" id="item9-remove" class="remove-checkbox"/>
+            <input type="checkbox" class="remove-checkbox" id="item9-remove" />
             <label for="item9-remove">❌</label>
         </li>
     </ul>
