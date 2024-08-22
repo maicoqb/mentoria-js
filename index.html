@@ -6,13 +6,16 @@
     <title>Lista de Compras</title>
 
     <style>
-        li {
-            list-style-type: none;
-        }
-
         ul {
             padding-left: 0.5em;
             margin-top: 0.5em;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+
+        li {
+            display: flex;
         }
 
         .toggle-checkbox {
@@ -30,6 +33,10 @@
 
         li:has(.remove-checkbox:checked)  {
             display: none;
+        }
+
+        .remove-checkbox + label {
+            margin-left: auto;
         }
     </style>
 </head>
@@ -90,6 +97,12 @@
         <li>
             <input type="checkbox" class="toggle-checkbox" id="item9" />
             <label for="item9">Sacos de lixo</label>
+            <input type="checkbox" class="remove-checkbox" id="item9-remove" />
+            <label for="item9-remove">❌</label>
+        </li>
+        <li>
+            <input type="checkbox" class="toggle-checkbox" id="item9" />
+            <label for="item9">Ullamco esse excepteur eu sunt id et quis nulla deserunt cupidatat aute.</label>
             <input type="checkbox" class="remove-checkbox" id="item9-remove" />
             <label for="item9-remove">❌</label>
         </li>
