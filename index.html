@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <title>Lista de Compras</title>
@@ -17,27 +18,48 @@
         input[type="checkbox"] {
             margin-right: 1em;
         }
-        
-        input[type="checkbox"]:checked + label {
+
+        input[type="checkbox"]:checked+label {
             text-decoration: line-through;
             color: gray;
         }
     </style>
 </head>
+
 <body>
     <h1>Lista de Compras</h1>
     <span>Itens que preciso comprar:</span>
-    
+
     <ul>
-        <li><input type="checkbox" /><label>Arroz</label></li>
-        <li><input type="checkbox" /><label>Pão</label></li>
-        <li><input type="checkbox" /><label>Maçã</label></li>
-        <li><input type="checkbox" /><label>Detergente</label></li>
-        <li><input type="checkbox" /><label>Desinfetante</label></li>
-        <li><input type="checkbox" /><label>Sabonete</label></li>
-        <li><input type="checkbox" /><label>Creme dental</label></li>
-        <li><input type="checkbox" /><label>Papel toalha</label></li>
-        <li><input type="checkbox" /><label>Sacos de lixo</label></li>
+        <li>
+            <input type="checkbox" id="item1" />
+            <label for="item1">Arroz</label>
+        </li>
+        <li>
+            <input type="checkbox" id="item2" />
+            <label for="item2">Pão</label></li>
+        <li>
+            <input type="checkbox" id="item3" />
+            <label for="item3">Maçã</label></li>
+        <li>
+            <input type="checkbox" id="item4" />
+            <label for="item4">Detergente</label></li>
+        <li>
+            <input type="checkbox" id="item5" />
+            <label for="item5">Desinfetante</label></li>
+        <li>
+            <input type="checkbox" id="item6" />
+            <label for="item6">Sabonete</label></li>
+        <li>
+            <input type="checkbox" id="item7" />
+            <label for="item7">Creme dental</label></li>
+        <li>
+            <input type="checkbox" id="item8" />
+            <label for="item8">Papel toalha</label></li>
+        <li>
+            <input type="checkbox" id="item9" />
+            <label for="item9">Sacos de lixo</label></li>
     </ul>
 </body>
+
 </html>
